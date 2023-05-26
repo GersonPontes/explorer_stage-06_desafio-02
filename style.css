@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: #000000;
+  padding: 0 2rem;
+  color: #FFFFFF;
+}
+
+body, button, ::placeholder{
+  font-family: 'Poppins', sans-serif;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+
+#app{
+  width: 112rem;
+  margin: 13rem auto;
+}
+
+#app header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+
+#app header h1{
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#app header .search{
+  display: flex;
+  gap: 1rem;
+}
+
+#app header input{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  width: 46rem;
+  height: 5rem;
+  border-radius: .5rem;
+  border: none;
+  padding: 0 2rem;
+  background-color: #06181c;
+}
+
+#app header button{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #065e7c;
+  color: #FFFFFF;
+  font-weight: 600;
+  height: 5rem;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  border: none;
+  padding: 0 3rem;
+  cursor: pointer;
+}
+
+#app header button:hover{
+  filter: brightness(1.1);
+}
+
+#app header button span{
+  font-size: 3rem;
+}
+
+#app main table{
+  width: 100%;
+  text-align: left;
+  border: #065e7c 1px solid;
+  border-radius: 1rem;
+  overflow: hidden;
+  border-spacing: 0;
+}
+
+#app main table thead tr th{
+  background-color: #092d38;
+  padding: 2rem 4rem;
+}
+
+#app main table tbody tr{
+  background-color: #06181c;
+}
+
+#app main table tbody tr:nth-child(odd){
+  padding: 2rem 4rem;
+  background-color: #030b0d;
+}
+
+#app main table tbody tr td{
+  padding: 2rem 4rem;
+}
+
+#app main table tbody tr:not(:last-child) td{
+  border-bottom: #065e7c 1px solid;
+}
+
+#app main table tbody tr td img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+#app main table tbody tr td.user{
+  display: flex;
+  gap: 2rem;
+}
+
+#app main table tbody tr td.user a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#app main table tbody tr td.user a span{
+  font-weight: 400;
+  color: #cccccc;
+}
+
+#app main table tbody tr td a.user-delete{
+  text-decoration: none;
+  color: rgba(238, 66, 66, 0.876);
+}
+
+#app main table tbody tr td a.user-delete:hover{
+  text-decoration: underline;
+}
